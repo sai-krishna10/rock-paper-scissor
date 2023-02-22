@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, blue, violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title a {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+.container {
+    height: 70vh;
+    width: 40vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* start button */
+.container .start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .start .start-title a {
+    font-size: 25px;
+    font-weight: 900;
+    color: darkmagenta
+}
+
+.container .start button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.container .game-question .que-title a {
+    font-size: 25px;
+    font-weight: 900;
+    color: darkmagenta
+}
+
+
+/* game question */
+.container .game-question {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.container .game-question .que-btn button,
+.start button {
+    height: 7vh;
+    width: 10vw;
+    border-radius: 5px;
+    background-color: blue;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.container .game-question .que-btn button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: blue;
+    border: 2px solid blue;
+}
+
+
+/* Game Display */
+
+.container .game-display {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+}
+
+.container .game-display .computer,
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container .game-display .computer a,
+.player a {
+    font-size: 25px;
+    font-weight: 900;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .game-display .choices {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .game-display .choices .player-choice,
+.computer .com-choice {
+    height: 7vh;
+    width: 10vw;
+    border-radius: 5px;
+    background-color: blue;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .game-display .choices .player-choice:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.game-display .points {
+    display: flex;
+}
+
+.game-display .points .com-points,
+.player-points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: blueviolet;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.game-display .points .com-points a,
+.player-points a {
+    font-size: 15px;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+.game-display .res-statment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 6vh;
+    width: 35vw;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+/*result*/
+
+.container .result {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .result a {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.buttons button {
+    height: 7vh;
+    width: 10vw;
+    border-radius: 5px;
+    background-color: blue;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: blue;
+    border: 2px solid blue;
+}
+
+@media only screen and (max-width:660px) {
+    .container {
+        height: 55vh;
+        width: 75vw;
+    }
+
+    .container .game-display .computer a,
+    .player a {
+        font-size: 15px;
+    }
+
+    .container .start .start-title a {
+        font-size: 20px;
+
+    }
+
+    .container .start .start-btn {
+        font-size: 15px;
+    }
+
+    .container .game-question .que-btn button,
+    .reset button,
+    .start button {
+        height: 6vh;
+        width: 14vw;
+    }
+
+    .title a {
+        font-size: 15px;
+    }
+
+    .container .game-display .choices .player-choice,
+    .computer .com-choice {
+        height: 5vh;
+        width: 16vw;
+        font-size: 10px;
+    }
+
+    .game-display .points .com-points a,
+    .player-points a {
+        font-size: 12px;
+    }
+
+    .game-display .points .com-points,
+    .player-points {
+        margin: 10px;
+        padding: 4px;
+    }
+
+    .container .game-question .que-btn button,
+    .start button,
+    .buttons button {
+        height: 5vh;
+        width: 16vw;
+        font-size: 15px;
+    }
+
+    .container .game-question .que-title a,
+    .title a {
+        font-size: 17px;
+    }
+
+    .game-display .res-statment {
+        font-size: 9px;
+        width: 50vw;
+    }
+}
